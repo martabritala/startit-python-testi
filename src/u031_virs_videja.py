@@ -1,4 +1,13 @@
 def lielaku_skaits(saraksts):
+    lielaki = 0
+
+    videjais = sum(saraksts)/len(saraksts)
+
+    for skaitlis in saraksts :
+        if skaitlis > videjais:
+            lielaki +=1
+
+    return lielaki
     """
     Funkcija akceptē vienu argumentu - masīvu ar skaitļiem 
     un atgriež cik no šiem skaitļiem ir strikti lielāki

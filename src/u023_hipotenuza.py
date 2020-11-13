@@ -1,6 +1,15 @@
 import math
 
 def hipotenuza(a, b):
+    if a>0 and b>0:
+        hip = math.sqrt(a**2 + b**2)
+
+    else:
+        hip = 0
+
+    return hip
+
+
     """
     Funkcija akceptē divus argumentus - katešu garumus un atgriež 
     hipotenūzas garumu, vai 0, ja kaut vienas katetes garums ir <= 0
